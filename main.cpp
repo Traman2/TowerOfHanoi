@@ -6,10 +6,10 @@ Stack rodB{};
 Stack rodC{};
 
 void printIt() {
-
     cout << rodA << endl;
     cout << rodB << endl;
     cout << rodC << endl;
+
 }
 
 void moveDisk(char rodFrom, char rodTo) {
@@ -29,12 +29,14 @@ void moveDisk(char rodFrom, char rodTo) {
 }
 
 void hanoi(int n, char rodFrom, char rodMiddle, char rodTo) { //rodFrom = rodA, rodMiddle = rodB, rodTo = rodC
-    //Exit condition
+
+    //Exit condition - only 1 disk left in tower a
     if(n == 1) {
         cout << "Move disk " << n <<" from rod " << rodFrom << " to rod " << rodTo << endl;
         moveDisk(rodFrom, rodTo);
         return;
     }
+
 
     hanoi(n - 1, rodFrom, rodTo, rodMiddle);
 
