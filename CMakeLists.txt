@@ -3,4 +3,6 @@ project(TowerOfHanoi)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(TowerOfHanoi main.cpp)
+add_executable(TowerOfHanoi main.cpp
+        Stack.cpp
+        Stack.h)
