@@ -12,22 +12,24 @@ using namespace std;
 
 class Stack {
 public:
-    Stack();
-    Stack(int initCap);
+    Stack(); //Default constructor
+    explicit Stack(size_t initCap);
+    ~Stack();
 
-    bool isEmpty();
+    bool isEmpty() const;
     int peek();
     int pop();
     void push(int item);
 
 private:
-    size_t size;
-    int values[];
+    size_t size {0};
+    int* stack;
+    friend ostream& operator<<(ostream& stream, const Stack& st);
 
     void doubleCapacity();
 
 };
 
-ostream& operator<<(ostream& stream, const Stack& obj);
+ostream& operator<<(ostream& stream, const Stack& st);
 
 #endif //TOWEROFHANOI_STACK_H
