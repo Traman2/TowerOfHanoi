@@ -1,6 +1,6 @@
 # Tower of Hanoi
 
-The Tower of Hanoi is a classic problem in computer science that can be solved with the use of recursions. You can solve the problem by using a certain set of rules as follows:
+The Tower of Hanoi is a classic programming problem in computer science that can be solved with the use of recursions. You can solve the problem by using a certain set of rules as follows:
 
 1. Only one disk can be moved at a time.
 2. Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack or on an empty rod.
